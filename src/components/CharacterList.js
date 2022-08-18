@@ -1,26 +1,29 @@
 import React from "react";
-
+import '../styles/CharacterList.css'
 const CharacterList = ({ characters }) => {
   console.log(characters);
   
   return (
     <div className="container">
-      <div className="row">
         {characters.map((item, index) => (
-          <div key={index} className="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <div className="card" style={{ minWidth: "200px" }}>
-              <img className="card-img-top" src={item.imageUrl} alt="character" />
-              <div className="card-body">
-                <h5 className="card-title">{item.name}</h5>
-                <hr />
-                <p className="card-text">Species: {item.specie}</p>
-                <p className="card-text">Location: {item.originplanet}</p>
-                <p className="card-text">Transform: {item.transform}</p>
+          // <div key={index} className="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div className="contenedor">
+              <div className="cards">
+                <div className="card">
+                <div className="colour"></div>
+                  <div className="card-text">
+                    <h4>{item.name}</h4>
+                    <p>Species:<b> {item.specie} </b></p>
+                    <p>Location:<b> {item.originplanet} </b></p>
+                    <p>Transform:<b> {item.transform} </b></p>
+                    </div>
+                    <img  className="img" src={item.imageUrl}></img>
+                    <div className="colour-buttom"></div>
+                </div>
               </div>
             </div>
-          </div>
+          //  </div>
         ))}
-      </div>
     </div>
   );
 };
