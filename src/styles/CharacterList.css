@@ -15,17 +15,16 @@
 }
 
 .img{
-    width:200px;
-    height:450px;
-    
+    width:100px;
+    height:300px;
 }
 .card{
     overflow: hidden;
     text-align: center;
     position: relative;
-    width:200px;
-    height:200px;
-    background-color: blue;
+    width:180px;
+    height:150px;
+    background-image: url("https://c.tenor.com/1Wr0CZtv5QkAAAAC/blackmasterr-blackmaster.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,8 +82,8 @@
 .card-text{
     display: none;
     position: relative;
-    top: 5px;
-    font-size: 80%;
+
+    font-size: 50%;
 }
 
 .card:hover{
